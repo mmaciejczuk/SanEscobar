@@ -1,0 +1,5 @@
+src/Domain/SanEscobar.Domain.Core/obj/
+src/Domain/SanEscobar.Domain.Core/bin/
+*.suo
+*.vpp.bak_*
+*.vpp.lck*
