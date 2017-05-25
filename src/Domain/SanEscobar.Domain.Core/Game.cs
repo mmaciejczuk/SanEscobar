@@ -1,26 +1,27 @@
 ﻿using System.Collections.Generic;
+using SanEscobar.Domain.Core.Extensions;
 
 namespace SanEscobar.Domain.Core
 {
     public class Game
     {
-        private Queue<Player> _players;
-
-        public Queue<Player> Players
-        {
-            get { return _players; }
-        }
+        public Queue<Player> Players { get; private set; }
 
         public Game(List<Player> players)
         {
-            var noOfPlayers = players.Count;
-
-            InitializePlayerList(noOfPlayers);
+            InitializePlayerList(players);
         }
 
-        private void InitializePlayerList(int noOfPlayers)
+        private void InitializePlayerList(List<Player> players)
         {
-            _players = new Queue<Player>(noOfPlayers);
+            var noOfPlayers = players.Count;
+            Players = new Queue<Player>(noOfPlayers);
+            players.Randomize();
+
+            foreach (var player in players)
+            {
+                Players.Enqueue(player);
+            }
         }
     }
 }

@@ -3,3 +3,4 @@ src/Domain/SanEscobar.Domain.Core/bin/
 *.suo
 *.vpp.bak_*
 *.vpp.lck*
+src/Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.sln.DotSettings.user
