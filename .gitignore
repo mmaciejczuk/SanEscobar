@@ -4,3 +4,7 @@ src/Domain/SanEscobar.Domain.Core/bin/
 *.vpp.bak_*
 *.vpp.lck*
 src/Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.sln.DotSettings.user
+src/Domain/SanEscobar.Domain.Core.UnitTests/bin/
+src/Domain/SanEscobar.Domain.Core.UnitTests/obj/
+src/Domain/SanEscobar.Domain.Core/packages/
+src/Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.csproj.user
