@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.3
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar", "SanEscobar\SanEscobar.csproj", "{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "..\Redis\RedisCache\RedisCache.csproj", "{CA944D81-1231-4286-9BA9-0133F6A64403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA944D81-1231-4286-9BA9-0133F6A64403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA944D81-1231-4286-9BA9-0133F6A64403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA944D81-1231-4286-9BA9-0133F6A64403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA944D81-1231-4286-9BA9-0133F6A64403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

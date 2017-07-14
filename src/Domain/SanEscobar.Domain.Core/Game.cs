@@ -5,6 +5,7 @@ namespace SanEscobar.Domain.Core
 {
     public class Game
     {
+        public string Id { get; set; }
         public Queue<Player> Players { get; private set; }
 
         public Game(List<Player> players)
