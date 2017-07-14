@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core", "SanEscobar.Domain.Core.csproj", "{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar", "..\..\Api\SanEscobar\SanEscobar.csproj", "{2B8BDECC-E7D7-45C0-8852-16AD4BCF0055}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "..\..\Redis\RedisCache\RedisCache.csproj", "{85B98B14-BFD6-42C3-9116-E2EB3526F7D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8BDECC-E7D7-45C0-8852-16AD4BCF0055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8BDECC-E7D7-45C0-8852-16AD4BCF0055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8BDECC-E7D7-45C0-8852-16AD4BCF0055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8BDECC-E7D7-45C0-8852-16AD4BCF0055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B98B14-BFD6-42C3-9116-E2EB3526F7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B98B14-BFD6-42C3-9116-E2EB3526F7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B98B14-BFD6-42C3-9116-E2EB3526F7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B98B14-BFD6-42C3-9116-E2EB3526F7D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
