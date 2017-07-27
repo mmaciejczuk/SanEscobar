@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar", "SanEscobar\SanEscobar.csproj", "{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar", "SanEscobar\SanEscobar.csproj", "{EE019606-C6BF-4075-B4B6-0B7E77BCCF1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "..\Redis\RedisCache\RedisCache.csproj", "{CA944D81-1231-4286-9BA9-0133F6A64403}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "..\Redis\RedisCache\RedisCache.csproj", "{CA944D81-1231-4286-9BA9-0133F6A64403}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66793836-3015-491C-90DD-4059F1F42637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66793836-3015-491C-90DD-4059F1F42637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
