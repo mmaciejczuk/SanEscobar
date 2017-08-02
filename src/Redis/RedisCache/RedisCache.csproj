@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
