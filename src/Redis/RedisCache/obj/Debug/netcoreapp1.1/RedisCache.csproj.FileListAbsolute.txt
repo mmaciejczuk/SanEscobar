@@ -11,3 +11,5 @@ C:\Code\SAN\src\Redis\RedisCache\obj\Debug\netcoreapp1.1\RedisCache.dll
 C:\Code\SAN\src\Redis\RedisCache\obj\Debug\netcoreapp1.1\RedisCache.pdb
 C:\Code\SAN\src\Redis\RedisCache\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
 C:\Code\SAN\src\Redis\RedisCache\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
+C:\Code\SAN\src\Redis\RedisCache\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.dll
+C:\Code\SAN\src\Redis\RedisCache\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.pdb

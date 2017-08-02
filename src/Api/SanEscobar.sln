@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "..\Redis\Redi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core2", "..\Domain\SanEscobar.Domain.Core2\SanEscobar.Domain.Core2.csproj", "{323E173C-8B0F-417D-8B85-E2100427D97D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{66793836-3015-491C-90DD-4059F1F42637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{323E173C-8B0F-417D-8B85-E2100427D97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{323E173C-8B0F-417D-8B85-E2100427D97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{323E173C-8B0F-417D-8B85-E2100427D97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{323E173C-8B0F-417D-8B85-E2100427D97D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

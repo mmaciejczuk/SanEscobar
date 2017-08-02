@@ -68,6 +68,7 @@
     <Compile Include="Common\RoleType.cs" />
     <Compile Include="Board\CargoShip.cs" />
     <Compile Include="Board\TradingHouse.cs" />
+    <Compile Include="Repositories\IPlayerRepository.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

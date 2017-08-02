@@ -1,4 +1,4 @@
-﻿using SanEscobar.Domain.Core;
+﻿using SanEscobar.Domain.Core2;
 using System;
 using SanEscobar.Infrastructure.Repositories;
 using System.Linq;

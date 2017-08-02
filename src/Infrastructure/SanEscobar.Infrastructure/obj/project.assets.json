@@ -2719,8 +2719,12 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "SanEscobar.Domain.Core/1.0.0": {
-        "type": "project"
+      "SanEscobar.Domain.Core2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v1.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.1.2"
+        }
       }
     }
   },
@@ -8003,10 +8007,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "SanEscobar.Domain.Core/1.0.0": {
+    "SanEscobar.Domain.Core2/1.0.0": {
       "type": "project",
-      "path": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.csproj",
-      "msbuildProject": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.csproj"
+      "path": "../../Domain/SanEscobar.Domain.Core2/SanEscobar.Domain.Core2.csproj",
+      "msbuildProject": "../../Domain/SanEscobar.Domain.Core2/SanEscobar.Domain.Core2.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8015,7 +8019,7 @@
       "Microsoft.EntityFrameworkCore >= 1.1.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 1.1.2",
       "Microsoft.NETCore.App >= 1.1.2",
-      "SanEscobar.Domain.Core >= 1.0.0"
+      "SanEscobar.Domain.Core2 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8035,8 +8039,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj": {
-              "projectPath": "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj"
+            "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core2\\SanEscobar.Domain.Core2.csproj": {
+              "projectPath": "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core2\\SanEscobar.Domain.Core2.csproj"
             }
           }
         }

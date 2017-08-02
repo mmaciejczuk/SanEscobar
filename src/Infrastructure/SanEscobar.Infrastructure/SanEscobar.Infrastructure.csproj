@@ -17,12 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj" />
+    <ProjectReference Include="..\..\Domain\SanEscobar.Domain.Core2\SanEscobar.Domain.Core2.csproj" />
   </ItemGroup>
 
 </Project>
