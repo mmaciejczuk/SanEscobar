@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace RedisCache
+namespace SanEscobar.Infrastructure.Services
 {
-    public interface IPlayerService
+    public interface IRedisService
     {
-        string AddPlayer(string gameId, Player player);
+        string AddPlayer(string gameName, Player player);
         Player GetPlayer(string playerId);
         bool DeletePlayer(string playerId);
     }

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace SanEscobar.Domain.Core
+namespace SanEscobar.Domain.Core2
 {
     public class CustomsHouse : LargeBuildingTile
     {

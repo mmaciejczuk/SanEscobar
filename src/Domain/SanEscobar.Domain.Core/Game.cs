@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using SanEscobar.Domain.Core.Extensions;
+using SanEscobar.Domain.Core2.Extensions;
 
-namespace SanEscobar.Domain.Core
+namespace SanEscobar.Domain.Core2
 {
     public class Game
     {

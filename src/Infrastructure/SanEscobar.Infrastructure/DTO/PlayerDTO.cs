@@ -12,10 +12,6 @@ namespace SanEscobar.Infrastructure.DTO
 
         public string Name { get; set; }
 
-        public string Hash { get; set; }
-
-        public string Group { get; set; }
-
         public bool IsPlaying { get; set; }
     }
 }

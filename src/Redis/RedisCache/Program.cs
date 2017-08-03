@@ -14,25 +14,8 @@ namespace RedisCache
 
                 db.Database.EnsureCreated();
 
-                var playerOne = new Player()
-                {
-                    ConnectionId = "ConOne",
-                    Id = Guid.NewGuid().ToString(),
-                    Name = "PlayerOne",
-                    Hash = "HashOne",
-                    Group = "GroupOne",
-                    IsPlaying = true,
-                };
-
-                var playerTwo = new Player()
-                {
-                    ConnectionId = "ConTwo",
-                    Id = Guid.NewGuid().ToString(),
-                    Name = "PlayerTwo",
-                    Hash = "HashTwo",
-                    Group = "GroupTwo",
-                    IsPlaying = true,
-                };
+                var playerOne = new Player("ConOne", "PlayerOne", "GroupOne");
+                var playerTwo = new Player("ConTwo", "PlayerTwo", "GroupTwo");
 
                 db.Players.Add(playerOne);
                 db.Players.Add(playerTwo);
@@ -40,6 +23,7 @@ namespace RedisCache
 
                 var players = db.Players.OrderBy(b => b.Name).ToList();
                 Console.WriteLine(players.Count);
+                Console.ReadKey();
             }
 
 

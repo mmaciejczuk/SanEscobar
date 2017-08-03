@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SanEscobar.Domain.Core
+namespace SanEscobar.Domain.Core2
 {
     public class CargoShip
     {

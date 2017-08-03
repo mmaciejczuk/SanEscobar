@@ -1,12 +1,12 @@
-﻿using SanEscobar.Domain.Core2;
-using ServiceStack.Redis;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SanEscobar.Domain.Core2;
+using ServiceStack.Redis;
 
-namespace RedisCache
+namespace SanEscobar.Infrastructure.Services
 {
-    public class PlayerService : IPlayerService
+    public class RedisService : IRedisService
     {
         public string AddPlayer(string gameId, Player player)
         {
@@ -60,6 +60,11 @@ namespace RedisCache
             {
                 return false;
             }
+        }
+
+        Player IRedisService.GetPlayer(string playerId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

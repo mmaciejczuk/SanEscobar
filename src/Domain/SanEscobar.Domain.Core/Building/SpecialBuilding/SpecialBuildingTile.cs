@@ -1,4 +1,4 @@
-﻿namespace SanEscobar.Domain.Core.Building
+﻿namespace SanEscobar.Domain.Core2.Building
 {
     public abstract class SpecialBuildingTile : BuildingTile
     {

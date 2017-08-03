@@ -2935,9 +2935,6 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "SanEscobar.Domain.Core/1.0.0": {
-        "type": "project"
-      },
       "SanEscobar.Domain.Core2/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v1.1",
@@ -2953,7 +2950,8 @@
           "Microsoft.EntityFrameworkCore": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
-          "SanEscobar.Domain.Core2": "1.0.0"
+          "SanEscobar.Domain.Core2": "1.0.0",
+          "ServiceStack.Redis.Core": "1.0.43"
         }
       }
     }
@@ -8590,15 +8588,10 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "SanEscobar.Domain.Core/1.0.0": {
-      "type": "project",
-      "path": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.csproj",
-      "msbuildProject": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core.csproj"
-    },
     "SanEscobar.Domain.Core2/1.0.0": {
       "type": "project",
-      "path": "../../Domain/SanEscobar.Domain.Core2/SanEscobar.Domain.Core2.csproj",
-      "msbuildProject": "../../Domain/SanEscobar.Domain.Core2/SanEscobar.Domain.Core2.csproj"
+      "path": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core2.csproj",
+      "msbuildProject": "../../Domain/SanEscobar.Domain.Core/SanEscobar.Domain.Core2.csproj"
     },
     "SanEscobar.Infrastructure/1.0.0": {
       "type": "project",
@@ -8609,7 +8602,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
       "Microsoft.NETCore.App >= 1.1.2",
-      "SanEscobar.Domain.Core >= 1.0.0",
       "SanEscobar.Infrastructure >= 1.0.0",
       "ServiceStack.Redis.Core >= 1.0.43"
     ]
@@ -8631,9 +8623,6 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj": {
-              "projectPath": "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj"
-            },
             "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj": {
               "projectPath": "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj"
             }

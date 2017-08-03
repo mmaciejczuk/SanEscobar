@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SanEscobar.Domain.Core.Extensions
+namespace SanEscobar.Domain.Core2.Extensions
 {
     internal static class QueueExtensions
     {

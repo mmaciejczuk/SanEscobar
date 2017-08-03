@@ -1,6 +1,0 @@
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.deps.json
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.dll
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.pdb
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\obj\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.AssemblyInfo.cs
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\obj\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.dll
-C:\Code\SAN\src\Domain\SanEscobar.Domain.Core2\obj\Debug\netcoreapp1.1\SanEscobar.Domain.Core2.pdb
