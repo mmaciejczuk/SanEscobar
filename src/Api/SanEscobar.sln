@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "..\Redis\Redi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Domain.Core2", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core2.csproj", "{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

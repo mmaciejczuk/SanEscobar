@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using SanEscobar.Domain.Core2.Building;
+using SanEscobar.Domain.Core.Building;
 
-namespace SanEscobar.Domain.Core2
+namespace SanEscobar.Domain.Core
 {
     public class CityHall : LargeBuildingTile
     {

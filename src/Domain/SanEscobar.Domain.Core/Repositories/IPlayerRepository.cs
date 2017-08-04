@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SanEscobar.Domain.Core2.Repositories
+namespace SanEscobar.Domain.Core.Repositories
 {
     public interface IPlayerRepository
     {

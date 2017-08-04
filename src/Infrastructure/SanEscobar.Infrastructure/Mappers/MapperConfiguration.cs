@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SanEscobar.Domain.Core2;
+using SanEscobar.Domain.Core;
 using SanEscobar.Infrastructure.DTO;
 
 namespace SanEscobar.Infrastructure.Mappers

@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using SanEscobar.Infrastructure.Services;
-using SanEscobar.Domain.Core2.Repositories;
+using SanEscobar.Domain.Core.Repositories;
 using SanEscobar.Infrastructure.Repositories;
 
 namespace SanEscobar

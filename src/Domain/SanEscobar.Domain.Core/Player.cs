@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SanEscobar.Domain.Core2
+namespace SanEscobar.Domain.Core
 {
     public class Player
     {

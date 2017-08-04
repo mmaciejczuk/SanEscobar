@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SanEscobar.Domain.Core2;
+using SanEscobar.Domain.Core;
 using ServiceStack.Redis;
 
 namespace SanEscobar.Infrastructure.Services

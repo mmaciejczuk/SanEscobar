@@ -1,4 +1,4 @@
-﻿using SanEscobar.Domain.Core2;
+﻿using SanEscobar.Domain.Core;
 using ServiceStack.Redis;
 using System;
 using System.Collections.Generic;

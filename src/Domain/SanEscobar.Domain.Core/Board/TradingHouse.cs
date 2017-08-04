@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SanEscobar.Domain.Core2
+namespace SanEscobar.Domain.Core
 {
     public class TradingHouse
     {

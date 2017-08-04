@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using SanEscobar.Domain.Core2;
-using SanEscobar.Domain.Core2.Repositories;
+using SanEscobar.Domain.Core;
+using SanEscobar.Domain.Core.Repositories;
 using System.Linq;
 using SanEscobar.Infrastructure.Services;
 

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SanEscobar.Domain.Core2;
+using SanEscobar.Domain.Core;
 using SanEscobar.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
