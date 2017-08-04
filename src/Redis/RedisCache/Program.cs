@@ -14,8 +14,8 @@ namespace RedisCache
 
                 db.Database.EnsureCreated();
 
-                var playerOne = new Player("ConOne", "PlayerOne", "GroupOne");
-                var playerTwo = new Player("ConTwo", "PlayerTwo", "GroupTwo");
+                var playerOne = Player.Create("ConOne", "PlayerOne", "GroupOne");
+                var playerTwo = Player.Create("ConTwo", "PlayerTwo", "GroupTwo");
 
                 db.Players.Add(playerOne);
                 db.Players.Add(playerTwo);

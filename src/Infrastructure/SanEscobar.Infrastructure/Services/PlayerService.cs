@@ -36,7 +36,7 @@ namespace SanEscobar.Infrastructure.Services
                 throw new Exception($"Player with name: '{0}' already exists.");
             }
 
-            player = new Player(ConnectionId, Name, Group);
+            player = Player.Create(ConnectionId, Name, Group);
             _playerRepository.Add(player);
         }
     }
