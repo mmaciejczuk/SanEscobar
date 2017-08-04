@@ -6,13 +6,16 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "rediscache/1.0.0": {
+      "sanescobar.infrastructure/1.0.0": {
         "dependencies": {
-          "SanEscobar.Infrastructure": "1.0.0",
+          "AutoMapper": "6.1.1",
+          "Microsoft.EntityFrameworkCore": "1.1.2",
+          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
+          "SanEscobar.Domain.Core": "1.0.0",
           "ServiceStack.Redis.Core": "1.0.43"
         },
         "runtime": {
-          "RedisCache.dll": {}
+          "SanEscobar.Infrastructure.dll": {}
         }
       },
       "automapper/6.1.1": {
@@ -329,23 +332,11 @@
         "runtime": {
           "SanEscobar.Domain.Core.dll": {}
         }
-      },
-      "sanescobar.infrastructure/1.0.0": {
-        "dependencies": {
-          "AutoMapper": "6.1.1",
-          "Microsoft.EntityFrameworkCore": "1.1.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
-          "SanEscobar.Domain.Core": "1.0.0",
-          "ServiceStack.Redis.Core": "1.0.43"
-        },
-        "runtime": {
-          "SanEscobar.Infrastructure.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "rediscache/1.0.0": {
+    "sanescobar.infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -603,11 +594,6 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "sanescobar.domain.core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "sanescobar.infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

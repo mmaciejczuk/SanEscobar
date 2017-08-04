@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar", "SanEscobar\Sa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCache", "..\Redis\RedisCache\RedisCache.csproj", "{CA944D81-1231-4286-9BA9-0133F6A64403}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Infrastructure", "..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj", "{66793836-3015-491C-90DD-4059F1F42637}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{CA944D81-1231-4286-9BA9-0133F6A64403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA944D81-1231-4286-9BA9-0133F6A64403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA944D81-1231-4286-9BA9-0133F6A64403}.Release|Any CPU.Build.0 = Release|Any CPU
-		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{158A9DCD-C9DF-4D6E-9DEF-614E49AAB450}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66793836-3015-491C-90DD-4059F1F42637}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
