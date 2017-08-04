@@ -10,7 +10,7 @@ namespace SanEscobar.Infrastructure.DTO
 
         public string Id { get; set; }
 
-        public string Name { get; set; }
+        public string PlayerName { get; set; }
 
         public bool IsPlaying { get; set; }
     }

@@ -4,28 +4,25 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using SanEscobar.Infrastructure.DTO;
+using AutoMapper;
 
 namespace SanEscobar.Infrastructure.Services
 {
     public class PlayerService : IPlayerService
     {
         private readonly IPlayerRepository _playerRepository;
+        private readonly IMapper _mapper;
 
-        public PlayerService(IPlayerRepository playerRepository)
+        public PlayerService(IPlayerRepository playerRepository, IMapper mapper)
         {
             _playerRepository = playerRepository;
+            _mapper = mapper;
         }
 
         public PlayerDTO Get(string Name)
         {
             var player = _playerRepository.GetByName(Name);
-            return new PlayerDTO
-            {
-                ConnectionId = player.ConnectionId,
-                Id = player.Id,
-                Name = player.Name,
-                IsPlaying = player.IsPlaying
-            };
+            return _mapper.Map<Player, PlayerDTO>(player);
         }
 
         public void Register(string ConnectionId, string Name, string Group)

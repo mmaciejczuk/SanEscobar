@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SanEscobar.Infrastructure.Services;
 using SanEscobar.Infrastructure.DTO;
+using SanEscobar.Infrastructure.Commands.Players;
 
 namespace SanEscobar.Controllers
 {
@@ -13,8 +14,14 @@ namespace SanEscobar.Controllers
             _playerService = playerService;
         }
 
-        [HttpGet("{Name}")]
-        public PlayerDTO Get(string Name)
-            => _playerService.Get(Name);
+        [HttpGet("{name}")]
+        public PlayerDTO Get(string name)
+            => _playerService.Get(name);
+
+        [HttpPost("")]
+        public void Post([FromBody]CreatePlayer request)
+        {
+            _playerService.Register(request.ConnectionId, request.Name, request.Group);
+        }
     }
 }

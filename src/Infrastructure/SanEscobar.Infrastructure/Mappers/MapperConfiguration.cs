@@ -9,7 +9,9 @@ namespace SanEscobar.Infrastructure.Mappers
         public static IMapper Initialize()
         => new MapperConfiguration(cfg =>
         {
-            cfg.CreateMap<Player, PlayerDTO>();
+            cfg.CreateMap<Player, PlayerDTO>().ForMember(x => x.PlayerName, 
+                m => m.MapFrom(p => p.Name));
+            //cfg.CreateMap
         })
             .CreateMapper();
     }
