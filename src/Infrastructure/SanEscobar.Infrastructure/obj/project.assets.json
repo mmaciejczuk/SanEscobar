@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "AutoMapper/6.1.1": {
@@ -2940,12 +2940,6 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "Microsoft.NETCore.App": "1.1.2"
-        },
-        "compile": {
-          "bin/placeholder/SanEscobar.Domain.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/SanEscobar.Domain.Core.dll": {}
         }
       }
     }
@@ -8607,22 +8601,11 @@
       "projectUniqueName": "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj",
       "projectName": "SanEscobar.Infrastructure",
       "projectPath": "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\mariusz.maciejczuk\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\mariusz.maciejczuk\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
-      "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Users\\mariusz.maciejczuk\\.dotnet\\NuGetFallbackFolder": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/aspnetcore-ci-dev/api/v3/index.json": {}
-      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -8631,32 +8614,27 @@
             }
           }
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
       "netcoreapp1.1": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "1.1.2"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "1.1.2",
             "autoReferenced": true
           },
-          "AutoMapper": {
-            "target": "Package",
-            "version": "6.1.1"
-          },
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "1.1.2"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "AutoMapper": {
+            "target": "Package",
+            "version": "6.1.1"
           },
           "ServiceStack.Redis.Core": {
             "target": "Package",

@@ -12,7 +12,7 @@ namespace RedisCache
             using (var db = new SanEscobarContext())
             {
 
-                db.Database.EnsureCreated();
+               db.Database.EnsureCreated();
 
                 var playerOne = Player.Create("ConOne", "PlayerOne", "GroupOne");
                 var playerTwo = Player.Create("ConTwo", "PlayerTwo", "GroupTwo");
@@ -25,7 +25,6 @@ namespace RedisCache
                 Console.WriteLine(players.Count);
                 Console.ReadKey();
             }
-
 
             //using (var db = new SanEscobarContext())
             //{
