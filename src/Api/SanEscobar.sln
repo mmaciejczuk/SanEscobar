@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Infrastructure",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanEscobar.Domain.Core", "..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj", "{71F39BE7-1A51-4053-87B0-BFC7B53ED6C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "..\Test\TestApp\TestApp.csproj", "{A17C1A19-DD18-4853-878F-EF6E00ADAFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestApp", "..\Test\TestApp\TestApp.csproj", "{A17C1A19-DD18-4853-878F-EF6E00ADAFD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanEscobar.Domain.Core.UnitTests", "..\Domain\SanEscobar.Domain.Core.UnitTests\SanEscobar.Domain.Core.UnitTests.csproj", "{6AF26FB5-C87A-477C-BE31-D5816E126FF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A17C1A19-DD18-4853-878F-EF6E00ADAFD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A17C1A19-DD18-4853-878F-EF6E00ADAFD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A17C1A19-DD18-4853-878F-EF6E00ADAFD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF26FB5-C87A-477C-BE31-D5816E126FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF26FB5-C87A-477C-BE31-D5816E126FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF26FB5-C87A-477C-BE31-D5816E126FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF26FB5-C87A-477C-BE31-D5816E126FF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
