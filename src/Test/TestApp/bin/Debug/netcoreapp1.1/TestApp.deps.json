@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "rediscache/1.0.0": {
+      "testapp/1.0.0": {
         "dependencies": {
-          "SanEscobar.Infrastructure": "1.0.0",
-          "ServiceStack.Redis.Core": "1.0.43"
+          "SanEscobar.Domain.Core": "1.0.0",
+          "SanEscobar.Infrastructure": "1.0.0"
         },
         "runtime": {
-          "RedisCache.dll": {}
+          "TestApp.dll": {}
         }
       },
       "automapper/6.1.1": {
@@ -345,7 +345,7 @@
     }
   },
   "libraries": {
-    "rediscache/1.0.0": {
+    "testapp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -360,14 +360,14 @@
     "microsoft.entityframeworkcore/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2oY1cQ3DEhpbRjlDBE1zb7IngKyPC4fslAX5WL1mnVQOLX/8BPOAjgYM2inzNK2z8ld/DxBUZEwc3xfNc8qhbw==",
+      "sha512": "sha512-G34mM/SZxgtFmwvbWvegkPSpMRMcI/NCmkrHT+xsvN7Vtp0kvTII2I1jAdwwKDLVIHSTAXUyrkofPf004qe69Q==",
       "path": "microsoft.entityframeworkcore/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.1.1.2.nupkg.sha512"
     },
     "microsoft.entityframeworkcore.relational/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-oiPXaIMk8cPbEmtcChzhPzM1ZyEYMoy8sMYWgWfv292Q0e0U2v7CIrtGylrORVZOA4lb9M0gWjbfKPtj7iDbxA==",
+      "sha512": "sha512-714dQc5C0KT6qiRbITIOfJvEQey6heqZrq8s3mc+gN8e68SezLgOF0u1dN7+1Z6KneZ/pQfGKq6q7zZ/Idlx7w==",
       "path": "microsoft.entityframeworkcore.relational/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.relational.1.1.2.nupkg.sha512"
     },
@@ -381,49 +381,49 @@
     "microsoft.extensions.caching.abstractions/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5Ll69b2mk5vRMUgDbf0BWIYN3RkXdtNb+MB2GOhkxhq6Zldq8hpj+zN/gAs01JOcM8M/lkGAgxjzxh69QKK+Hg==",
+      "sha512": "sha512-cnv5VjQc81OsvhnxnCsrlI5pQWG1bG5ypPfBT4WQDfaOMqc0IWi1/hA5/HZ2ItPf0W7MLzqjKya3SyYeN/cjWg==",
       "path": "microsoft.extensions.caching.abstractions/1.1.1",
       "hashPath": "microsoft.extensions.caching.abstractions.1.1.1.nupkg.sha512"
     },
     "microsoft.extensions.caching.memory/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-E35yEKFOc8Q/Ocfg5QDdcp/1nzUtycDzJjvUJU3R1iDp/iNl3/qDCyOWmU8CjbtrsD1CpAbvGdwOMJTOw3fqcw==",
+      "sha512": "sha512-iKxOnje1s51KN1RWAd0IW+OI1QN5DcQNuhUDS/nZdrD2TwGc1G9rHWJW/Gi56S4kzCuwLWaHbk7qhS9e4wVnIA==",
       "path": "microsoft.extensions.caching.memory/1.1.1",
       "hashPath": "microsoft.extensions.caching.memory.1.1.1.nupkg.sha512"
     },
     "microsoft.extensions.dependencyinjection/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-meG2tsLdHT0SROqxGBiY8A6XUKlwsQVj1N9cyrS+ZJd1MKhoSaw54KuSH6PmpCB/K/ifkR7o9yVVVamu9XZyeg==",
+      "sha512": "sha512-JvP3pYxfFM5Mb2DgwdzT3SktQj8tbReUKFOT78B5zdqqXuIPmddv6nKRpdq7ZYMen5DBqowTH6QuGwoclhXEMA==",
       "path": "microsoft.extensions.dependencyinjection/1.1.0",
       "hashPath": "microsoft.extensions.dependencyinjection.1.1.0.nupkg.sha512"
     },
     "microsoft.extensions.dependencyinjection.abstractions/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2luhjVaWZd8Wmr2KUJcLNAN+iZgezTyfamLG6Lo5FVYY1LYaS7UFOmNtApHGVIytWWtuXSk4ea0t2Vx0HgF5fg==",
+      "sha512": "sha512-4vDAB3ck5RXy6WIgm8jmOcCI37sKQohrnV5chm2Xu+n9Oc+8UJgx0z0pInHRWAeVFM7OV8uX1uOhOIbXYSOvNg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/1.1.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.1.1.0.nupkg.sha512"
     },
     "microsoft.extensions.logging/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cxLG416uOEFmnv7w4/rsVKD4dRYFuUY+G5WXpLVLMNIL6VYcQkDe67cx2IWBrtUieA08w9eCuxrd2pxIrJ7Wtg==",
+      "sha512": "sha512-W1Tpn3sBemOJoE7bokQWOUSvPCk/JiBfctEjYhW0lZa2jCNhPJVuKPvrtYXKXQ9fnP+KUiNVCFPwvU/CSSRERg==",
       "path": "microsoft.extensions.logging/1.1.1",
       "hashPath": "microsoft.extensions.logging.1.1.1.nupkg.sha512"
     },
     "microsoft.extensions.logging.abstractions/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-MMWQNrwQKrSigIaGpPWIK9ZZCNd9aaCHaLgwfPiJNdOfU3UE+RA093YZ7B879MdZ1qSFPcS1QLLNjD+dxXX7Aw==",
+      "sha512": "sha512-4pa1QT25rWCXE2LuAr4qnim5qCWjDRqIZiT+I5JdujU9RyRm02V5hxDLirNlWX2WWPwaonbyKUWpoxndTdmZYA==",
       "path": "microsoft.extensions.logging.abstractions/1.1.1",
       "hashPath": "microsoft.extensions.logging.abstractions.1.1.1.nupkg.sha512"
     },
     "microsoft.extensions.options/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-G6+0sSQV81xYe0FYiraB3nt6Bnb2L8S+e87UrhasxbqFVKjnTeHEfEae3qNvoG30zp8jTFf7E25e05Lv9VIP5w==",
+      "sha512": "sha512-9Xtbo8lVR/pE13mzubJCNyWp7lWTq/eNdcUx0uhwlWezkyWDPzlCPkTmE6n+//aSnIrlhLHMuVwKz3/t6hnRLQ==",
       "path": "microsoft.extensions.options/1.1.1",
       "hashPath": "microsoft.extensions.options.1.1.1.nupkg.sha512"
     },
@@ -437,7 +437,7 @@
     "remotion.linq/2.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
+      "sha512": "sha512-F6zbuQ7EMquLINUamuHD/SGhCYGKLAzz35Ikp1xl+9s/1VZUJ4Zt//Xf+lep2X6R9rP5y7/DrRoNiH4QCmMSDg==",
       "path": "remotion.linq/2.1.1",
       "hashPath": "remotion.linq.2.1.1.nupkg.sha512"
     },
@@ -521,7 +521,7 @@
     "system.data.common/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
+      "sha512": "sha512-wLP9jQIBfLrebr0zuPfpMz/T/4WJDOba595zQYWU4EuQv2bH5bWFuymo2QMJXuAStoWwPCbBXyEj9b+4utPfJw==",
       "path": "system.data.common/4.3.0",
       "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },
@@ -535,7 +535,7 @@
     "system.interactive.async/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iyrgkZz9Dzm0fiPouQszFC3SO/46k6AYd/jG9bu+/o0AoDMaRXtlo3TIuWVNtOuJFd1noL963QouroJ0T3rImw==",
+      "sha512": "sha512-6Ko9uLke6e7SpPygFfvXr+TnKSm719Y1Lm+juogrF8FgLXtxC+7cjQtF+j3Xteyua9/D599TkyTL7z7aMbqcyw==",
       "path": "system.interactive.async/3.0.0",
       "hashPath": "system.interactive.async.3.0.0.nupkg.sha512"
     },

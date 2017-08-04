@@ -7,3 +7,12 @@ C:\Code\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1
 C:\Code\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
 C:\Code\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
 C:\Code\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.csprojResolveAssemblyReference.cache
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.deps.json
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.csprojResolveAssemblyReference.cache
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.AssemblyInfo.cs
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\obj\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.dll
+C:\_GIT\SAN\src\Infrastructure\SanEscobar.Infrastructure\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.pdb

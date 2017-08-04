@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using SanEscobar.Infrastructure.DTO;
 using AutoMapper;
+using System.Threading.Tasks;
 
 namespace SanEscobar.Infrastructure.Services
 {
@@ -19,22 +20,22 @@ namespace SanEscobar.Infrastructure.Services
             _mapper = mapper;
         }
 
-        public PlayerDTO Get(string Name)
+        public async Task<PlayerDTO> GetAsync(string name)
         {
-            var player = _playerRepository.GetByName(Name);
+            var player = await _playerRepository.GetByNameAsync(name);
             return _mapper.Map<Player, PlayerDTO>(player);
         }
 
-        public void Register(string ConnectionId, string Name, string Group)
+        public async Task RegisterAsync(string connectionId, string name, string group)
         {
-            var player = _playerRepository.GetByName(Name);  
+            var player = await _playerRepository.GetByNameAsync(name);  
             if(player == null)
             {
                 throw new Exception($"Player with name: '{0}' already exists.");
             }
 
-            player = Player.Create(ConnectionId, Name, Group);
-            _playerRepository.Add(player);
+            player = Player.Create(connectionId, name, group);
+            await _playerRepository.AddAsync(player);
         }
     }
 }
