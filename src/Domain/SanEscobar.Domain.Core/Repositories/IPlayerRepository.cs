@@ -8,11 +8,11 @@ namespace SanEscobar.Domain.Core.Repositories
 {
     public interface IPlayerRepository
     {
-        Player Get(string id);
-        Player GetByName(string Name);
-        IEnumerable<Player> GetAll();
-        void Add(Player player);
-        void Remove(string id);
-        void Update(Player player);
+        Task<Player> GetAsync(string id);
+        Task<Player> GetByNameAsync(string Name);
+        Task<IEnumerable<Player>> GetAllAsync();
+        Task AddAsync(Player player);
+        Task RemoveAsync(string id);
+        Task UpdateAsync(Player player);
     }
 }

@@ -5,6 +5,7 @@ using SanEscobar.Domain.Core;
 using SanEscobar.Domain.Core.Repositories;
 using System.Linq;
 using SanEscobar.Infrastructure.Services;
+using System.Threading.Tasks;
 
 namespace SanEscobar.Infrastructure.Repositories
 {
@@ -21,28 +22,32 @@ namespace SanEscobar.Infrastructure.Repositories
         {
             _db = db;
         }
-                
-        public void Add(Player player)
-            => _db.Players.Add(player);
 
-        public Player Get(string id)
-            => _db.Players.Single(x => x.Id == id.ToString());
+        public async Task<Player> GetAsync(string id)
+            => await Task.FromResult(_db.Players.SingleOrDefault(x => x.Id == id.ToString()));
 
-        public IEnumerable<Player> GetAll()
-            => _db.Players;
+        public async Task<IEnumerable<Player>> GetAllAsync()
+            => await Task.FromResult(_db.Players);
 
-        public Player GetByName(string Name)
-            => _db.Players.Single(x => x.Name == Name);
-
-        public void Remove(string id)
+        public async Task AddAsync(Player player)
         {
-            var player = Get(id);
-            _db.Players.Remove(player);
+            _db.Players.Add(player);
+            await Task.CompletedTask;
         }
 
-        public void Update(Player player)
+        public async Task<Player> GetByNameAsync(string Name)
+            => await Task.FromResult(_db.Players.SingleOrDefault(x => x.Name == Name));
+
+        public async Task RemoveAsync(string id)
         {
-            throw new NotImplementedException();
+            var player = await GetAsync(id);
+            _db.Players.Remove(player);
+            await Task.CompletedTask;
+        }
+
+        public async Task UpdateAsync(Player player)
+        {
+            await Task.CompletedTask;
         }
     }
 }

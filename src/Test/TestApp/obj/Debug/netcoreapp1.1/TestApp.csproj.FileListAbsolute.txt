@@ -1,0 +1,13 @@
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.deps.json
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.runtimeconfig.json
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.runtimeconfig.dev.json
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.dll
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.pdb
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.dll
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.pdb
+C:\_GIT\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
+C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.csprojResolveAssemblyReference.cache
+C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.AssemblyInfo.cs
+C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.dll
+C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.pdb

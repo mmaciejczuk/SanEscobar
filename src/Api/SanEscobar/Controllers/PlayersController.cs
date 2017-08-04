@@ -2,6 +2,7 @@
 using SanEscobar.Infrastructure.Services;
 using SanEscobar.Infrastructure.DTO;
 using SanEscobar.Infrastructure.Commands.Players;
+using System.Threading.Tasks;
 
 namespace SanEscobar.Controllers
 {
@@ -15,13 +16,11 @@ namespace SanEscobar.Controllers
         }
 
         [HttpGet("{name}")]
-        public PlayerDTO Get(string name)
-            => _playerService.Get(name);
+        public async Task<PlayerDTO> Get(string name)
+            => await _playerService.GetAsync(name);
 
-        [HttpPost("")]
-        public void Post([FromBody]CreatePlayer request)
-        {
-            _playerService.Register(request.ConnectionId, request.Name, request.Group);
-        }
+        [HttpPost]
+        public async Task Post([FromBody]CreatePlayer request)
+            => await _playerService.RegisterAsync(request.ConnectionId, request.Name, request.Group);
     }
 }

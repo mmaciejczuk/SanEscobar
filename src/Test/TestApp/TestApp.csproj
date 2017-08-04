@@ -6,10 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ServiceStack.Redis.Core" Version="1.0.43" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\SanEscobar.Domain.Core\SanEscobar.Domain.Core.csproj" />
     <ProjectReference Include="..\..\Infrastructure\SanEscobar.Infrastructure\SanEscobar.Infrastructure.csproj" />
   </ItemGroup>
 
