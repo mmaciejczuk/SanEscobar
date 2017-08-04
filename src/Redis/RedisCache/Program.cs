@@ -1,8 +1,7 @@
 ﻿using SanEscobar.Domain.Core;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
+using SanEscobar.Infrastructure.Repositories;
+using System.Linq;
 
 namespace RedisCache
 {
@@ -10,39 +9,44 @@ namespace RedisCache
     {
         static void Main(string[] args)
         {
-            var playerOne = new Player()
+            using (var db = new SanEscobarContext())
             {
-                ConnectionId = "ConOne",
-                Id = Guid.NewGuid().ToString(),
-                Name = "PlayerOne",
-                Hash = "HashOne",
-                Group = "GroupOne",
-                IsPlaying = true,
-            };
 
-            var playerTwo = new Player()
-            {
-                ConnectionId = "ConTwo",
-                Id = Guid.NewGuid().ToString(),
-                Name = "PlayerTwo",
-                Hash = "HashTwo",
-                Group = "GroupTwo",
-                IsPlaying = true,
-            };
+                db.Database.EnsureCreated();
 
-            PlayerService playerService = new PlayerService();
-            var playerOneId = playerService.AddPlayer("gameOneId", playerOne);
-            var playerTwoId  = playerService.AddPlayer("gameOneId", playerTwo);
+                var playerOne = Player.Create("ConOne", "PlayerOne", "GroupOne");
+                var playerTwo = Player.Create("ConTwo", "PlayerTwo", "GroupTwo");
 
-            Player p1 = playerService.GetPlayer(playerOneId);
-            Player p2 = playerService.GetPlayer(playerTwoId);
+                db.Players.Add(playerOne);
+                db.Players.Add(playerTwo);
+                db.SaveChanges();
 
-            Console.WriteLine(p1.Id);
-            Console.WriteLine(p2.Id);
-            Console.ReadKey();
-            playerService.DeletePlayer(playerOneId);
-            playerService.DeletePlayer(playerTwoId);
-            Console.ReadKey();
+                var players = db.Players.OrderBy(b => b.Name).ToList();
+                Console.WriteLine(players.Count);
+                Console.ReadKey();
+            }
+
+
+            //using (var db = new SanEscobarContext())
+            //{
+
+            //}
+
+            //PlayerService playerService = new PlayerService();
+            //var playerOneId = playerService.AddPlayer("gameOneId", playerOne);
+            //var playerTwoId = playerService.AddPlayer("gameOneId", playerTwo);
+
+            //Player p1 = playerService.GetPlayer(playerOneId);
+            //Player p2 = playerService.GetPlayer(playerTwoId);
+
+            //Console.WriteLine(p1.Id);
+            //Console.WriteLine(p2.Id);
+            //Console.ReadKey();
+            //playerService.DeletePlayer(playerOneId);
+            //playerService.DeletePlayer(playerTwoId);
+            //Console.ReadKey();
+
+
         }
     }    
 }

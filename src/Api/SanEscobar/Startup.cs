@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using SanEscobar.Infrastructure.Services;
+using SanEscobar.Domain.Core.Repositories;
+using SanEscobar.Infrastructure.Repositories;
 
 namespace SanEscobar
 {
@@ -28,6 +31,10 @@ namespace SanEscobar
         public void ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
+            services.AddScoped<ISanEscobarContext, SanEscobarContext>();
+            services.AddScoped<IPlayerRepository, PlayerRepository>();
+            services.AddScoped<IPlayerService, PlayerService>();
+            services.AddScoped<IRedisService, RedisService>();
             services.AddMvc();
         }
 

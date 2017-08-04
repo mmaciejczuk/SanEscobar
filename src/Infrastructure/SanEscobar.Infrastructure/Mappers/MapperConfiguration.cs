@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using SanEscobar.Domain.Core;
+using SanEscobar.Infrastructure.DTO;
 
 namespace SanEscobar.Infrastructure.Mappers
 {
@@ -7,7 +9,7 @@ namespace SanEscobar.Infrastructure.Mappers
         public static IMapper Initialize()
         => new MapperConfiguration(cfg =>
         {
-            //cfg.CreateMap<OneClass, TwoClass>();
+            cfg.CreateMap<Player, PlayerDTO>();
         })
             .CreateMapper();
     }
