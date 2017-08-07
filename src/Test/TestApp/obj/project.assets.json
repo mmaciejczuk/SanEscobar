@@ -2,6 +2,19 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
+      "Autofac/4.6.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0",
+          "System.ComponentModel": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.dll": {}
+        }
+      },
       "AutoMapper/6.1.1": {
         "type": "package",
         "dependencies": {
@@ -2947,6 +2960,7 @@
         "framework": ".NETCoreApp,Version=v1.1",
         "dependencies": {
           "AutoMapper": "6.1.1",
+          "Autofac": "4.6.1",
           "Microsoft.EntityFrameworkCore": "1.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "1.1.2",
           "Microsoft.NETCore.App": "1.1.2",
@@ -2957,6 +2971,19 @@
     }
   },
   "libraries": {
+    "Autofac/4.6.1": {
+      "sha512": "/feXiAKiSe9XLK+fdnz0p1iDg6JCkOhjqMkw9ewGy0f6IzXgmPLDRa4FUg6nIGRm2sTO677w/76uJ5OJU6EiyA==",
+      "type": "package",
+      "path": "autofac/4.6.1",
+      "files": [
+        "autofac.4.6.1.nupkg.sha512",
+        "autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
     "AutoMapper/6.1.1": {
       "sha512": "A+6PAblvzmkXPS20nFBQJvlNSW5oEdyfN5+cxT/Du35fTNyuP5pNDXT64KT/jBgxt7CPduOM0Y7oLnNe0E5IXg==",
       "type": "package",
@@ -3128,7 +3155,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore/1.1.2": {
-      "sha512": "G34mM/SZxgtFmwvbWvegkPSpMRMcI/NCmkrHT+xsvN7Vtp0kvTII2I1jAdwwKDLVIHSTAXUyrkofPf004qe69Q==",
+      "sha512": "2oY1cQ3DEhpbRjlDBE1zb7IngKyPC4fslAX5WL1mnVQOLX/8BPOAjgYM2inzNK2z8ld/DxBUZEwc3xfNc8qhbw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/1.1.2",
       "files": [
@@ -3141,7 +3168,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/1.1.2": {
-      "sha512": "714dQc5C0KT6qiRbITIOfJvEQey6heqZrq8s3mc+gN8e68SezLgOF0u1dN7+1Z6KneZ/pQfGKq6q7zZ/Idlx7w==",
+      "sha512": "oiPXaIMk8cPbEmtcChzhPzM1ZyEYMoy8sMYWgWfv292Q0e0U2v7CIrtGylrORVZOA4lb9M0gWjbfKPtj7iDbxA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/1.1.2",
       "files": [
@@ -3167,7 +3194,7 @@
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/1.1.1": {
-      "sha512": "cnv5VjQc81OsvhnxnCsrlI5pQWG1bG5ypPfBT4WQDfaOMqc0IWi1/hA5/HZ2ItPf0W7MLzqjKya3SyYeN/cjWg==",
+      "sha512": "5Ll69b2mk5vRMUgDbf0BWIYN3RkXdtNb+MB2GOhkxhq6Zldq8hpj+zN/gAs01JOcM8M/lkGAgxjzxh69QKK+Hg==",
       "type": "package",
       "path": "microsoft.extensions.caching.abstractions/1.1.1",
       "files": [
@@ -3178,7 +3205,7 @@
       ]
     },
     "Microsoft.Extensions.Caching.Memory/1.1.1": {
-      "sha512": "iKxOnje1s51KN1RWAd0IW+OI1QN5DcQNuhUDS/nZdrD2TwGc1G9rHWJW/Gi56S4kzCuwLWaHbk7qhS9e4wVnIA==",
+      "sha512": "E35yEKFOc8Q/Ocfg5QDdcp/1nzUtycDzJjvUJU3R1iDp/iNl3/qDCyOWmU8CjbtrsD1CpAbvGdwOMJTOw3fqcw==",
       "type": "package",
       "path": "microsoft.extensions.caching.memory/1.1.1",
       "files": [
@@ -3191,7 +3218,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection/1.1.0": {
-      "sha512": "JvP3pYxfFM5Mb2DgwdzT3SktQj8tbReUKFOT78B5zdqqXuIPmddv6nKRpdq7ZYMen5DBqowTH6QuGwoclhXEMA==",
+      "sha512": "meG2tsLdHT0SROqxGBiY8A6XUKlwsQVj1N9cyrS+ZJd1MKhoSaw54KuSH6PmpCB/K/ifkR7o9yVVVamu9XZyeg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection/1.1.0",
       "files": [
@@ -3202,7 +3229,7 @@
       ]
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/1.1.0": {
-      "sha512": "4vDAB3ck5RXy6WIgm8jmOcCI37sKQohrnV5chm2Xu+n9Oc+8UJgx0z0pInHRWAeVFM7OV8uX1uOhOIbXYSOvNg==",
+      "sha512": "2luhjVaWZd8Wmr2KUJcLNAN+iZgezTyfamLG6Lo5FVYY1LYaS7UFOmNtApHGVIytWWtuXSk4ea0t2Vx0HgF5fg==",
       "type": "package",
       "path": "microsoft.extensions.dependencyinjection.abstractions/1.1.0",
       "files": [
@@ -3213,7 +3240,7 @@
       ]
     },
     "Microsoft.Extensions.Logging/1.1.1": {
-      "sha512": "W1Tpn3sBemOJoE7bokQWOUSvPCk/JiBfctEjYhW0lZa2jCNhPJVuKPvrtYXKXQ9fnP+KUiNVCFPwvU/CSSRERg==",
+      "sha512": "cxLG416uOEFmnv7w4/rsVKD4dRYFuUY+G5WXpLVLMNIL6VYcQkDe67cx2IWBrtUieA08w9eCuxrd2pxIrJ7Wtg==",
       "type": "package",
       "path": "microsoft.extensions.logging/1.1.1",
       "files": [
@@ -3224,7 +3251,7 @@
       ]
     },
     "Microsoft.Extensions.Logging.Abstractions/1.1.1": {
-      "sha512": "4pa1QT25rWCXE2LuAr4qnim5qCWjDRqIZiT+I5JdujU9RyRm02V5hxDLirNlWX2WWPwaonbyKUWpoxndTdmZYA==",
+      "sha512": "MMWQNrwQKrSigIaGpPWIK9ZZCNd9aaCHaLgwfPiJNdOfU3UE+RA093YZ7B879MdZ1qSFPcS1QLLNjD+dxXX7Aw==",
       "type": "package",
       "path": "microsoft.extensions.logging.abstractions/1.1.1",
       "files": [
@@ -3235,7 +3262,7 @@
       ]
     },
     "Microsoft.Extensions.Options/1.1.1": {
-      "sha512": "9Xtbo8lVR/pE13mzubJCNyWp7lWTq/eNdcUx0uhwlWezkyWDPzlCPkTmE6n+//aSnIrlhLHMuVwKz3/t6hnRLQ==",
+      "sha512": "G6+0sSQV81xYe0FYiraB3nt6Bnb2L8S+e87UrhasxbqFVKjnTeHEfEae3qNvoG30zp8jTFf7E25e05Lv9VIP5w==",
       "type": "package",
       "path": "microsoft.extensions.options/1.1.1",
       "files": [
@@ -3490,7 +3517,7 @@
       ]
     },
     "Remotion.Linq/2.1.1": {
-      "sha512": "F6zbuQ7EMquLINUamuHD/SGhCYGKLAzz35Ikp1xl+9s/1VZUJ4Zt//Xf+lep2X6R9rP5y7/DrRoNiH4QCmMSDg==",
+      "sha512": "IJn0BqkvwEDpP+2qjvci7n4/a9f7DhKESLWb2/uG4xQh3rTkGTBUz69bI4IivCoKkTFAqjXxYDZw2K/npohjsw==",
       "type": "package",
       "path": "remotion.linq/2.1.1",
       "files": [
@@ -4351,7 +4378,7 @@
       ]
     },
     "System.Data.Common/4.3.0": {
-      "sha512": "wLP9jQIBfLrebr0zuPfpMz/T/4WJDOba595zQYWU4EuQv2bH5bWFuymo2QMJXuAStoWwPCbBXyEj9b+4utPfJw==",
+      "sha512": "lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
       "type": "package",
       "path": "system.data.common/4.3.0",
       "files": [
@@ -5024,7 +5051,7 @@
       ]
     },
     "System.Interactive.Async/3.0.0": {
-      "sha512": "6Ko9uLke6e7SpPygFfvXr+TnKSm719Y1Lm+juogrF8FgLXtxC+7cjQtF+j3Xteyua9/D599TkyTL7z7aMbqcyw==",
+      "sha512": "iyrgkZz9Dzm0fiPouQszFC3SO/46k6AYd/jG9bu+/o0AoDMaRXtlo3TIuWVNtOuJFd1noL963QouroJ0T3rImw==",
       "type": "package",
       "path": "system.interactive.async/3.0.0",
       "files": [
@@ -8607,15 +8634,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mariusz\\.nuget\\packages\\": {}
+    "C:\\Users\\mariusz.maciejczuk\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\_GIT\\SAN\\src\\Test\\TestApp\\TestApp.csproj",
+      "projectUniqueName": "C:\\Code\\SAN\\src\\Test\\TestApp\\TestApp.csproj",
       "projectName": "TestApp",
-      "projectPath": "C:\\_GIT\\SAN\\src\\Test\\TestApp\\TestApp.csproj",
-      "outputPath": "C:\\_GIT\\SAN\\src\\Test\\TestApp\\obj\\",
+      "projectPath": "C:\\Code\\SAN\\src\\Test\\TestApp\\TestApp.csproj",
+      "outputPath": "C:\\Code\\SAN\\src\\Test\\TestApp\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -8623,11 +8650,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\_GIT\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj": {
-              "projectPath": "C:\\_GIT\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj"
+            "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj": {
+              "projectPath": "C:\\Code\\SAN\\src\\Domain\\SanEscobar.Domain.Core\\SanEscobar.Domain.Core.csproj"
             },
-            "C:\\_GIT\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj": {
-              "projectPath": "C:\\_GIT\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj"
+            "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj": {
+              "projectPath": "C:\\Code\\SAN\\src\\Infrastructure\\SanEscobar.Infrastructure\\SanEscobar.Infrastructure.csproj"
             }
           }
         }

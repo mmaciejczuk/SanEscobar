@@ -11,3 +11,16 @@ C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.csprojResolveAssemb
 C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.AssemblyInfo.cs
 C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.dll
 C:\_GIT\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.pdb
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.deps.json
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.runtimeconfig.json
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.runtimeconfig.dev.json
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.dll
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\TestApp.pdb
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.dll
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.dll
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Domain.Core.pdb
+C:\Code\SAN\src\Test\TestApp\bin\Debug\netcoreapp1.1\SanEscobar.Infrastructure.pdb
+C:\Code\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.csprojResolveAssemblyReference.cache
+C:\Code\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.AssemblyInfo.cs
+C:\Code\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.dll
+C:\Code\SAN\src\Test\TestApp\obj\Debug\netcoreapp1.1\TestApp.pdb

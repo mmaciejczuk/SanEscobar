@@ -11,11 +11,17 @@ using SanEscobar.Infrastructure.Services;
 using SanEscobar.Domain.Core.Repositories;
 using SanEscobar.Infrastructure.Repositories;
 using SanEscobar.Infrastructure.Mappers;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using SanEscobar.Infrastructure.IoC.Modules;
 
 namespace SanEscobar
 {
     public class Startup
     {
+        public IConfigurationRoot Configuration { get; set; }
+        public IContainer ApplicationContainer { get; set; }
+
         public Startup(IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
@@ -26,10 +32,8 @@ namespace SanEscobar
             Configuration = builder.Build();
         }
 
-        public IConfigurationRoot Configuration { get; }
-
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             // Add framework services.
             services.AddScoped<ISanEscobarContext, SanEscobarContext>();
@@ -38,15 +42,23 @@ namespace SanEscobar
             services.AddScoped<IRedisService, RedisService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.AddMvc();
+
+            var builder = new ContainerBuilder();
+            builder.Populate(services);
+            builder.RegisterModule<CommandModule>();
+            ApplicationContainer = builder.Build();
+
+            return new AutofacServiceProvider(ApplicationContainer);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IApplicationLifetime appLifetime)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
             app.UseMvc();
+            //appLifetime.ApplicationStarted.Register(() => ApplicationContainer.Dispose());
         }
     }
 }
