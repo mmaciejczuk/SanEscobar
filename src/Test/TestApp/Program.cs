@@ -11,7 +11,6 @@ namespace TestApp
         {
             using (var db = new SanEscobarContext())
             {
-
                 db.Database.EnsureCreated();
 
                 var playerOne = Player.Create("ConOne", "PlayerOne", "GroupOne");
