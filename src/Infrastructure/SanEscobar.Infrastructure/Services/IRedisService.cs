@@ -10,5 +10,7 @@ namespace SanEscobar.Infrastructure.Services
         string AddPlayer(string gameName, Player player);
         Player GetPlayer(string playerId);
         bool DeletePlayer(string playerId);
+        T AddObject<T>(T obj) where T : class;
+        T GetObject<T>(string playerId) where T : class;
     }
 }

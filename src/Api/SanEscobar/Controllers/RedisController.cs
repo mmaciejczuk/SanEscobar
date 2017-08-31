@@ -3,25 +3,27 @@ using SanEscobar.Infrastructure.Services;
 using SanEscobar.Infrastructure.Commands.Players;
 using System.Threading.Tasks;
 using SanEscobar.Infrastructure.Commands;
+using SanEscobar.Infrastructure.DTO;
 
 namespace SanEscobar.Controllers
 {
     [Route("[controller]")]
-    public class PlayersController : Controller
+    public class RedisController : Controller
     {
-        private readonly IPlayerService _playerService;
+        private readonly IRedisService _redisService;
         private readonly ICommandDispatcher _commandDispatcher;
 
-        public PlayersController(IPlayerService playerService, ICommandDispatcher commandDispatcher)
+        public RedisController(IRedisService redisService, ICommandDispatcher commandDispatcher)
         {
-            _playerService = playerService;
+            _redisService = redisService;
             _commandDispatcher = commandDispatcher;
         }
 
         [HttpGet("{name}")]
-        public async Task<ActionResult> Get(string name)
+        public ActionResult Get(string id)
         {
-            var player = await _playerService.GetAsync(name);
+
+            var player = _redisService.GetObject<PlayerDTO>(id);
             if (User == null)
             {
                 return NotFound();
