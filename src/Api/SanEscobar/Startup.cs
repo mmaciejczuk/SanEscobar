@@ -39,7 +39,6 @@ namespace SanEscobar
             services.AddScoped<ISanEscobarContext, SanEscobarContext>();
             services.AddScoped<IPlayerRepository, PlayerRepository>();
             services.AddScoped<IPlayerService, PlayerService>();
-            services.AddScoped<IRedisService, RedisService>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.AddMvc();
 

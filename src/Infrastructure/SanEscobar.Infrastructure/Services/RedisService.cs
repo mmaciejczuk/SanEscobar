@@ -8,9 +8,9 @@ using System.Collections.Generic;
 
 namespace SanEscobar.Infrastructure.Services
 {
-    public class RedisService : IRedisService
+    public static class RedisService
     {
-        public bool Add<T>(T obj) where T : class
+        public static bool Add<T>(T obj) where T : class
         {
             try
             {
@@ -21,40 +21,32 @@ namespace SanEscobar.Infrastructure.Services
                     return true;
                 }
             }
+
             catch (Exception ex)
             {
-                //return default(T);
                 return false;
             }
         }
 
-        public T Get<T>(string id) where T : class
+        public static T Get<T>(string id) where T : class
         {
             try
             {
                 using (IRedisClient client = new RedisClient())
                 {
-                    if (id == null)
-                    {
-                        var playerClient = client.As<T>();
-                        var player = playerClient.GetById(id);
-                        return player;
-                    }
-                    else
-                    {
-                        var playerClient = client.As<T>();
-                        var player = playerClient.GetById(id);
-                        return player;
-                    }
+                    var playerClient = client.As<T>();
+                    var player = playerClient.GetById(id);
+                    return player;
                 }
             }
+
             catch (Exception ex)
             {
                 return null;
             }
         }
 
-        public IList<T> GetAll<T>() where T : class
+        public static IList<T> GetAll<T>() where T : class
         {
             try
             {
@@ -65,13 +57,14 @@ namespace SanEscobar.Infrastructure.Services
                     return player;
                 }
             }
+
             catch (Exception ex)
             {
                 return null;
             }
         }
 
-        public bool Delete<T>(string id) where T : class
+        public static bool Delete<T>(string id) where T : class
         {
             try
             {

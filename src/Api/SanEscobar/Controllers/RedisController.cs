@@ -11,43 +11,27 @@ namespace SanEscobar.Controllers
     [Route("api/redis")]
     public class RedisController : Controller
     {
-        private readonly IRedisService _redisService;
         private readonly ICommandDispatcher _commandDispatcher;
 
-        public RedisController(IRedisService redisService, ICommandDispatcher commandDispatcher)
+        public RedisController(ICommandDispatcher commandDispatcher)
         {
-            _redisService = redisService;
             _commandDispatcher = commandDispatcher;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id?}")]
         public IActionResult Get(string id)
         {
-            //var playerOne = new PlayerDTO()
+            //var players = TempService.InitializePlayerDTO();
+            //foreach(var player in players)
             //{
-            //    ConnectionId = "ConOne",
-            //    Id = Guid.NewGuid().ToString(),
-            //    PlayerName = "PlayerOne",
-            //    IsPlaying = true
-            //};
-
-            //var playerTwo = new PlayerDTO()
-            //{
-            //    ConnectionId = "ConTwo",
-            //    Id = Guid.NewGuid().ToString(),
-            //    PlayerName = "PlayerTwo",
-            //    IsPlaying = true
-            //};
-
-            RedisService redisService = new RedisService();
-            //var playerOneId = redisService.Add(playerOne);
-            //var playerTwoId = redisService.Add(playerTwo);
+            //    RedisService.Add(player);
+            //}
 
             var result = new object();
 
             if (id != null)
             {
-                result = redisService.Get<PlayerDTO>(id);
+                result = RedisService.Get<PlayerDTO>(id);
                 if (result == null)
                 {
                     return NotFound();
@@ -57,7 +41,7 @@ namespace SanEscobar.Controllers
 
             else
             {
-                result = redisService.GetAll<PlayerDTO>();
+                result = RedisService.GetAll<PlayerDTO>();
                 if (result == null)
                 {
                     return NotFound();
